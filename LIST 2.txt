@@ -1,0 +1,80 @@
+#CREATING LISTS DYNAMICALLY
+#1ST
+
+l=list(map(int,input().split()))
+w=set(l)
+print(w)
+v=list(w)
+print(v)
+
+Output
+{1, 2, 3, 4, 5, 7, 8, 26}
+[1, 2, 3, 4, 5, 7, 8, 26]
+
+#2
+#slicing
+
+w=input()
+t=w[2:5]
+print(t)
+
+Output
+tho
+
+
+#3
+Input:I am learning python language
+
+w=input()
+n=len(w)
+print(n)
+t=w[5:10]
+print(t)
+a=w[14:21]
+print(a)
+b=w[21:27]
+print(b)
+c=w[26:30]
+print(c)
+d=w[0:4]
+print(d)
+e=w[5:16]
+print(e)
+f=w[17:30]
+print(f)
+g=w[9:13]
+print(g)
+
+Output
+29
+learn
+python 
+langua
+age
+I am
+learning py
+hon language
+ning
+
+
+#4
+Input:I am learning python language
+
+To get in reverse order
+w=input()
+print(w[-10:-14:-1])
+print(w[-17:-25:-1])
+print(w[-17:-21:-1])
+print(w[-26:-30:-1])
+print(w[-4:-13:-1])
+print(w[-20:-28:-1])
+print(w[-7:-13:-1])
+
+Output
+noht
+gninrael
+gnin
+ma I
+gnual noh
+nrael ma
+al noh

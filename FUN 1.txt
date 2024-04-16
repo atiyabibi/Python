@@ -1,0 +1,116 @@
+#PROGRAMS USING FUNCTIONS
+
+#1ST PROGRAM
+
+def sumoftwonumbers(n1,n2):
+    solveit()
+    result=n1+n2
+    return result
+def solveit():
+    print("HI")
+
+
+num1=int(input())
+num2=int(input())
+result=sumoftwonumbers(num1,num2)
+print(result)
+
+Output
+HI
+9
+
+
+#2ND PROGRAM
+
+def sumoftwonumbers(n1,n2):
+    solveit()
+    result=n1+n2
+    return result
+def solveit():
+    print("HI")
+    print("Hello")
+    solveit4()
+def solveit2():
+    print("This is line 123")
+def solveit4():
+    print("Iam solveit4")
+    print("This is getting executed")
+    solveit2()
+
+
+num1=int(input())
+num2=int(input())
+result=sumoftwonumbers(num1,num2)
+print(result)
+
+
+Output
+HI
+Hello
+Iam solveit4
+This is getting executed
+This is line 123
+9
+
+
+
+
+
+#3RD PROGRAM
+
+print("Hello function")
+
+def solveit2():
+    print("This is first line getting executed")
+    print("This is line 123")
+    
+print("Iam not getting printed")
+
+def solveit4():
+    print("Iam solveit4")
+    print("This is getting executed")
+    solveit2()
+    print("Second line is getting executed")
+
+def solveit():
+     print("HI")
+     print("Hello")
+     solveit4()
+     print("solveit4 havent completed its execution")
+
+def sumoftwonumbers(n1,n2):
+    print("After execution")
+    solveit()
+    print("Nothing gets printed")
+    result=n1+n2
+    print("Before execution")
+    return result
+
+print("Last line is getting executed")
+num1=int(input())
+num2=int(input())
+result=sumoftwonumbers(num1,num2)
+print(result)
+print("First line is executed")
+
+
+Output
+
+Hello function
+Iam not getting printed
+Last line is getting executed
+After execution
+HI
+Hello
+Iam solveit4
+This is getting executed
+This is first line getting executed
+This is line 123
+Second line is getting executed
+solveit4 havent completed its execution
+Nothing gets printed
+Before execution
+9
+First line is executed
+
+
