@@ -1,1 +1,126 @@
+#PROGRAMS USING LISTS
 
+#1ST PROGRAM
+
+a=[10,20,30,-32,0]
+n=len(a)
+for i in range(n):
+    print(a[i])
+
+
+Output
+10
+20
+30
+-32
+0
+
+#2ND PROGRAM
+
+a=[10,20,30,-32,0]
+n=len(a)
+for i in range(n):
+    print(i,a[i])
+
+Output
+0 10
+1 20
+2 30
+3 -32
+4 0
+
+
+#3RD PROGRAM
+#USING NEGATIVE INDEX
+
+a=[10,20,30,-32,0]
+n=len(a)
+print("n=",n)
+for i in range(n-1,-1,-1):
+    print(i,a[i])
+
+Output
+n= 5
+4 0
+3 -32
+2 30
+1 20
+0 10
+
+
+#4TH PROGRAM
+#TO FIND A ELEMENT IN LIST
+
+a=[10,20,30,-32,0]
+n=len(a)
+key=int(input())
+print("n=",n)
+for i in range(n):
+    if key==a[i]:
+        print("Target found")
+        break
+    else:
+        print("Not found")
+
+Input
+0
+Output
+n= 5
+Target found
+Input
+100
+Output
+Not found
+
+
+#5TH PROGRAM
+#USING FLAGS
+
+a=[10,20,30,-32,0]
+n=len(a)
+key=int(input())
+visited=0
+for i in range(n):
+    if key==a[i]:
+        print("Target found")
+        visited=1
+        break
+if visited==0:
+        print("Not found")
+
+Input
+20
+Output
+Target found
+Input
+50
+Output
+Not found
+
+#6th program
+#NUMBER OF TIMES ELEMENT IS REPEATED IN A LIST
+
+a=[10,20,0,-32,0]
+n=len(a)
+key=int(input())
+visited=0
+m=0
+for i in range(n-1,-1,-1):
+    if key==a[i]:
+        print("Target found")
+        m=m+1
+        visited=1
+    
+if visited==0:
+        print("Not found")
+print("Number of target found =",m)
+
+Output
+Target found
+Target found
+Number of target found = 2
+    
+
+    
+    
+    
