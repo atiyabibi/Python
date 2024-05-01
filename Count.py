@@ -1,0 +1,34 @@
+#Count the number of vowels,consonants,digits and special characters(white spaces is also included as a special character)
+
+str=input()
+def count(str):
+    vowels=0
+    conso=0 #Consonant
+    digit=0
+    splsym=0
+    for i in range(0,len(str)):
+        ch=str[i]
+        if (ch>='a' and ch<='z') or (ch>='A' and ch<='Z'):
+            ch=ch.lower()
+            if ch=='a' or ch=='e' or ch=='i' or ch=='o' or  ch=='u':
+                vowels+=1
+            else:
+                conso+=1
+        elif ch >= '0' and ch <= '9':
+            digit+=1
+        else:
+            splsym+=1
+    print("Vowels:",vowels)
+    print("Consonants:",conso)
+    print("Digits:",digit)
+    print("Special Symbols:",splsym)
+count(str)
+
+Input:
+Hello @ 9
+   
+Output
+Vowels: 2
+Consonants: 3
+Digits: 1
+Special Symbols: 3
